@@ -1,5 +1,5 @@
 {
-  "title": "TensorFlowデモ",
+  "title": "TensorFlowを利用した画像認識フローのデモ",
   "details": {
     "steps": [{
       "text": "step1.md",
