@@ -1,6 +1,4 @@
 {
-  "title": "TensorFlowデモ",
-  "description": "Your First Scenario",
   "details": {
     "steps": [{
       "text": "step1.md",
