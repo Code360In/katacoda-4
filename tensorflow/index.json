@@ -7,14 +7,7 @@
     "steps": [{
       "title": "Step 1 - Run Command",
       "text": "step1.md"
-    }],
-    "intro": {
-      "text": "intro.md",
-      "credits": ""
-    },
-    "finish": {
-      "text": "finish.md"
-    }
+    }]
   },
   "environment": {
     "uilayout": "terminal",
