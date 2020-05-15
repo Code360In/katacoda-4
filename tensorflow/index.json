@@ -17,6 +17,7 @@
   "dashboards": [{"name": "Flow editor", "port": 1880}]
 },
   "backend": {
-    "imageid": "ubuntu"
+    "imageid": "ubuntu",
+        "port": 1880
   }
 }
