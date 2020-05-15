@@ -3,7 +3,6 @@
   "description": "Your First Scenario",
   "details": {
     "steps": [{
-      "title": "Step 1 - Run Command",
       "text": "step1.md",
       "code": "foreground.sh"
     }]
