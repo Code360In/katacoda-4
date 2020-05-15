@@ -12,7 +12,7 @@
   },
 "environment": {
   "showdashboard": true,
-  "dashboards": [{"name": "Display 1880", "port": 1880}],
+  "dashboards": [{"name": "Flow editor", "port": 1880}]
 },
   "backend": {
     "imageid": "ubuntu"
