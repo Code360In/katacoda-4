@@ -8,6 +8,6 @@ This is a demonstration flow using TensorFlow and Node-RED for the use case in s
 
 (4) Finally, the flow outputs the annotated images to the preview node and result to the debug node.
 
-#### Notes
+__Notes__
 - Because it is temporary environment on Katacoda, the Node-RED instance will be removed automatically after about 30 minutes.
 - Source image: https://www.tmpc.or.jp/04_parking/public/pb_livecamera.html
