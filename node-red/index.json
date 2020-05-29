@@ -1,0 +1,19 @@
+{
+  "title": "Image recognition using TensorFlow",
+  "details": {
+    "steps": [{
+      "text": "step1.md",
+      "code": "foreground.sh"
+    }]
+  },
+  "environment": {
+    "uilayout": "iframe",
+    "hidefinish": true,
+    "showdashboard": true,
+    "dashboards": [{"name": "Flow editor", "port": 1880}]
+  },
+  "backend": {
+    "imageid": "ubuntu",
+    "port": 1880
+  }
+}
