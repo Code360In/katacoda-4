@@ -1,9 +1,13 @@
-(1) 「Connecting to Port 1880」が60秒ほど表示された後、自動的にNode-REDのフローエディタへ遷移します。
+This is a demonstration flow using TensorFlow and Node-RED for the use case in surveillance.
 
-(2) サンプルフローの各injectノードのボタンをクリックするとインターネット上から画像を取得し、表示します。
+(1) After the message, "Connecting to Port 1880" is displayed for about three minutes, your browser automatically loads Node-RED flow editor.
 
-(3) その後、TensorFlowを用いて画像認識を行い、デバッグタプに画像認識結果を表示します。
+(2) The sample flow gets captured image data from surveillance cameras.
 
-※ file-injectノードのボタンをクリックすることで、PC上の画像ファイルを対象に処理することもできます。
+(3) And then, the flow shows source image in preview node and recognizes images using TensorFlow.
 
-※ 本Node-RED環境はKatacoda上に一時的に構築する環境であるため、30分ほど経過すると自動的に削除されます。
+(4) Finally, the flow outputs the annotated images to the preview node and result to the debug node.
+
+# Notes
+- Because it is temporary environment on Katacoda, the Node-RED instance will be removed automatically after about 30 minutes.
+- Source image: https://www.tmpc.or.jp/04_parking/public/pb_livecamera.html
