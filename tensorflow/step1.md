@@ -1,6 +1,6 @@
 This is a demonstration flow using TensorFlow and Node-RED for the use case in surveillance.
 
-(1) After the message, "Connecting to Port 1880" is displayed for about three minutes, your browser automatically loads Node-RED flow editor.
+(1) After the message, "Connecting to Port 1880" is displayed for about three minutes, your browser will automatically load Node-RED flow editor.
 
 (2) The sample flow gets captured image data from surveillance cameras.
 
