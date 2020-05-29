@@ -1,5 +1,5 @@
 {
-  "title": "TensorFlowを用いた画像認識のデモ",
+  "title": "Image recognition using TensorFlow",
   "details": {
     "steps": [{
       "text": "step1.md",
