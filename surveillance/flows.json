@@ -1,0 +1,856 @@
+[
+    {
+        "id": "d2858166.8f7df",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "d56ba2ff.19168",
+        "type": "cocossd",
+        "z": "d2858166.8f7df",
+        "name": "",
+        "x": 360,
+        "y": 40,
+        "wires": [
+            [
+                "c9d70d1e.a1445"
+            ]
+        ]
+    },
+    {
+        "id": "95d421e.5d673e",
+        "type": "debug",
+        "z": "d2858166.8f7df",
+        "name": "result",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 690,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "7944fb4b.6ba664",
+        "type": "http request",
+        "z": "d2858166.8f7df",
+        "name": "camera",
+        "method": "GET",
+        "ret": "bin",
+        "paytoqs": false,
+        "url": "http://tmpc-ichinohashi.suncomm.net/SnapshotJPEG?Resolution=320x240",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 75,
+        "y": 40,
+        "wires": [
+            [
+                "3fa658a0.400d58"
+            ]
+        ],
+        "icon": "font-awesome/fa-camera-retro",
+        "l": false
+    },
+    {
+        "id": "3fa658a0.400d58",
+        "type": "image",
+        "z": "d2858166.8f7df",
+        "name": "preview",
+        "width": "320",
+        "data": "payload",
+        "dataType": "msg",
+        "thumbnail": false,
+        "active": true,
+        "pass": true,
+        "outputs": 1,
+        "x": 180,
+        "y": 40,
+        "wires": [
+            [
+                "d56ba2ff.19168"
+            ]
+        ]
+    },
+    {
+        "id": "c9d70d1e.a1445",
+        "type": "image",
+        "z": "d2858166.8f7df",
+        "name": "preview",
+        "width": "320",
+        "data": "annotatedInput",
+        "dataType": "msg",
+        "thumbnail": false,
+        "active": true,
+        "pass": true,
+        "outputs": 1,
+        "x": 520,
+        "y": 40,
+        "wires": [
+            [
+                "95d421e.5d673e",
+                "229ac6aa.899bea"
+            ]
+        ]
+    },
+    {
+        "id": "2b33b9bb.59faa6",
+        "type": "cocossd",
+        "z": "d2858166.8f7df",
+        "name": "",
+        "x": 360,
+        "y": 340,
+        "wires": [
+            [
+                "204082c7.35636e"
+            ]
+        ]
+    },
+    {
+        "id": "5d7f5f7f.d9b5e",
+        "type": "debug",
+        "z": "d2858166.8f7df",
+        "name": "result",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 690,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "229ac6aa.899bea",
+        "type": "http request",
+        "z": "d2858166.8f7df",
+        "name": "camera",
+        "method": "GET",
+        "ret": "bin",
+        "paytoqs": false,
+        "url": "http://tmpc-roppongi.suncomm.net/SnapshotJPEG?Resolution=320x240",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 75,
+        "y": 340,
+        "wires": [
+            [
+                "61f0b43c.c8336c"
+            ]
+        ],
+        "icon": "font-awesome/fa-camera-retro",
+        "l": false
+    },
+    {
+        "id": "61f0b43c.c8336c",
+        "type": "image",
+        "z": "d2858166.8f7df",
+        "name": "preview",
+        "width": "320",
+        "data": "payload",
+        "dataType": "msg",
+        "thumbnail": false,
+        "active": true,
+        "pass": true,
+        "outputs": 1,
+        "x": 180,
+        "y": 340,
+        "wires": [
+            [
+                "2b33b9bb.59faa6"
+            ]
+        ]
+    },
+    {
+        "id": "204082c7.35636e",
+        "type": "image",
+        "z": "d2858166.8f7df",
+        "name": "preview",
+        "width": "320",
+        "data": "annotatedInput",
+        "dataType": "msg",
+        "thumbnail": true,
+        "active": true,
+        "pass": true,
+        "outputs": 1,
+        "x": 520,
+        "y": 340,
+        "wires": [
+            [
+                "5d7f5f7f.d9b5e",
+                "aeec5098.681e7"
+            ]
+        ]
+    },
+    {
+        "id": "c3500f05.fce24",
+        "type": "cocossd",
+        "z": "d2858166.8f7df",
+        "name": "",
+        "x": 360,
+        "y": 640,
+        "wires": [
+            [
+                "ba4719ed.d51488"
+            ]
+        ]
+    },
+    {
+        "id": "21b7ab86.2cf844",
+        "type": "debug",
+        "z": "d2858166.8f7df",
+        "name": "result",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 690,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "aeec5098.681e7",
+        "type": "http request",
+        "z": "d2858166.8f7df",
+        "name": "camera",
+        "method": "GET",
+        "ret": "bin",
+        "paytoqs": false,
+        "url": "http://tmpc-shinbashi3.suncomm.net/SnapshotJPEG?Resolution=320x240",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 75,
+        "y": 640,
+        "wires": [
+            [
+                "e26cc2da.8c8fc"
+            ]
+        ],
+        "icon": "font-awesome/fa-camera-retro",
+        "l": false
+    },
+    {
+        "id": "e26cc2da.8c8fc",
+        "type": "image",
+        "z": "d2858166.8f7df",
+        "name": "preview",
+        "width": "320",
+        "data": "payload",
+        "dataType": "msg",
+        "thumbnail": false,
+        "active": true,
+        "pass": true,
+        "outputs": 1,
+        "x": 180,
+        "y": 640,
+        "wires": [
+            [
+                "c3500f05.fce24"
+            ]
+        ]
+    },
+    {
+        "id": "ba4719ed.d51488",
+        "type": "image",
+        "z": "d2858166.8f7df",
+        "name": "preview",
+        "width": "320",
+        "data": "annotatedInput",
+        "dataType": "msg",
+        "thumbnail": false,
+        "active": true,
+        "pass": true,
+        "outputs": 1,
+        "x": 520,
+        "y": 640,
+        "wires": [
+            [
+                "21b7ab86.2cf844",
+                "2cb8a087.38f04"
+            ]
+        ]
+    },
+    {
+        "id": "1af8c486.8b6e4b",
+        "type": "cocossd",
+        "z": "d2858166.8f7df",
+        "name": "",
+        "x": 360,
+        "y": 940,
+        "wires": [
+            [
+                "cae258b4.051e48"
+            ]
+        ]
+    },
+    {
+        "id": "757287ac.24a2a8",
+        "type": "debug",
+        "z": "d2858166.8f7df",
+        "name": "result",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 690,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "2cb8a087.38f04",
+        "type": "http request",
+        "z": "d2858166.8f7df",
+        "name": "camera",
+        "method": "GET",
+        "ret": "bin",
+        "paytoqs": false,
+        "url": "http://tmpc-higashiikebukuro.suncomm.net/SnapshotJPEG?Resolution=320x240",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 75,
+        "y": 940,
+        "wires": [
+            [
+                "bfb2b1cd.31c16"
+            ]
+        ],
+        "icon": "font-awesome/fa-camera-retro",
+        "l": false
+    },
+    {
+        "id": "bfb2b1cd.31c16",
+        "type": "image",
+        "z": "d2858166.8f7df",
+        "name": "preview",
+        "width": "320",
+        "data": "payload",
+        "dataType": "msg",
+        "thumbnail": false,
+        "active": true,
+        "pass": true,
+        "outputs": 1,
+        "x": 180,
+        "y": 940,
+        "wires": [
+            [
+                "1af8c486.8b6e4b"
+            ]
+        ]
+    },
+    {
+        "id": "cae258b4.051e48",
+        "type": "image",
+        "z": "d2858166.8f7df",
+        "name": "preview",
+        "width": "320",
+        "data": "annotatedInput",
+        "dataType": "msg",
+        "thumbnail": false,
+        "active": true,
+        "pass": true,
+        "outputs": 1,
+        "x": 520,
+        "y": 940,
+        "wires": [
+            [
+                "757287ac.24a2a8",
+                "33572df0.81bdb2"
+            ]
+        ]
+    },
+    {
+        "id": "9cc75bd3.924908",
+        "type": "cocossd",
+        "z": "d2858166.8f7df",
+        "name": "",
+        "x": 360,
+        "y": 1240,
+        "wires": [
+            [
+                "a784be55.8e28a"
+            ]
+        ]
+    },
+    {
+        "id": "584a9e1d.8721f",
+        "type": "debug",
+        "z": "d2858166.8f7df",
+        "name": "result",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 690,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "33572df0.81bdb2",
+        "type": "http request",
+        "z": "d2858166.8f7df",
+        "name": "camera",
+        "method": "GET",
+        "ret": "bin",
+        "paytoqs": false,
+        "url": "http://tmpc-mutsumata.suncomm.net/SnapshotJPEG?Resolution=320x240",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 75,
+        "y": 1240,
+        "wires": [
+            [
+                "be4903aa.eac2b"
+            ]
+        ],
+        "icon": "font-awesome/fa-camera-retro",
+        "l": false
+    },
+    {
+        "id": "be4903aa.eac2b",
+        "type": "image",
+        "z": "d2858166.8f7df",
+        "name": "preview",
+        "width": "320",
+        "data": "payload",
+        "dataType": "msg",
+        "thumbnail": false,
+        "active": true,
+        "pass": true,
+        "outputs": 1,
+        "x": 180,
+        "y": 1240,
+        "wires": [
+            [
+                "9cc75bd3.924908"
+            ]
+        ]
+    },
+    {
+        "id": "a784be55.8e28a",
+        "type": "image",
+        "z": "d2858166.8f7df",
+        "name": "preview",
+        "width": "320",
+        "data": "annotatedInput",
+        "dataType": "msg",
+        "thumbnail": false,
+        "active": true,
+        "pass": true,
+        "outputs": 1,
+        "x": 520,
+        "y": 1240,
+        "wires": [
+            [
+                "584a9e1d.8721f",
+                "9c4a7470.50f598"
+            ]
+        ]
+    },
+    {
+        "id": "c5c379b8.57cd98",
+        "type": "cocossd",
+        "z": "d2858166.8f7df",
+        "name": "",
+        "x": 360,
+        "y": 1540,
+        "wires": [
+            [
+                "34cbbf02.eae0a"
+            ]
+        ]
+    },
+    {
+        "id": "6e7ff819.019dc8",
+        "type": "debug",
+        "z": "d2858166.8f7df",
+        "name": "result",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 690,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "9c4a7470.50f598",
+        "type": "http request",
+        "z": "d2858166.8f7df",
+        "name": "camera",
+        "method": "GET",
+        "ret": "bin",
+        "paytoqs": false,
+        "url": "http://tmpc-shinabashi-kita.suncomm.net/SnapshotJPEG?Resolution=320x240",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 75,
+        "y": 1540,
+        "wires": [
+            [
+                "298e47b8.4dd7a8"
+            ]
+        ],
+        "icon": "font-awesome/fa-camera-retro",
+        "l": false
+    },
+    {
+        "id": "298e47b8.4dd7a8",
+        "type": "image",
+        "z": "d2858166.8f7df",
+        "name": "preview",
+        "width": "320",
+        "data": "payload",
+        "dataType": "msg",
+        "thumbnail": false,
+        "active": true,
+        "pass": true,
+        "outputs": 1,
+        "x": 180,
+        "y": 1540,
+        "wires": [
+            [
+                "c5c379b8.57cd98"
+            ]
+        ]
+    },
+    {
+        "id": "34cbbf02.eae0a",
+        "type": "image",
+        "z": "d2858166.8f7df",
+        "name": "preview",
+        "width": "320",
+        "data": "annotatedInput",
+        "dataType": "msg",
+        "thumbnail": false,
+        "active": true,
+        "pass": true,
+        "outputs": 1,
+        "x": 520,
+        "y": 1540,
+        "wires": [
+            [
+                "6e7ff819.019dc8",
+                "efdf02c.cc16b"
+            ]
+        ]
+    },
+    {
+        "id": "d3f9a39d.a4b16",
+        "type": "cocossd",
+        "z": "d2858166.8f7df",
+        "name": "",
+        "x": 360,
+        "y": 1840,
+        "wires": [
+            [
+                "e03f336b.24be3"
+            ]
+        ]
+    },
+    {
+        "id": "c8e9d45f.ee8cf8",
+        "type": "debug",
+        "z": "d2858166.8f7df",
+        "name": "result",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 690,
+        "y": 1840,
+        "wires": []
+    },
+    {
+        "id": "efdf02c.cc16b",
+        "type": "http request",
+        "z": "d2858166.8f7df",
+        "name": "camera",
+        "method": "GET",
+        "ret": "bin",
+        "paytoqs": false,
+        "url": "http://tmpc-shinabashi-minami.suncomm.net/SnapshotJPEG?Resolution=320x240",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 75,
+        "y": 1840,
+        "wires": [
+            [
+                "5b40973b.4e5fe8"
+            ]
+        ],
+        "icon": "font-awesome/fa-camera-retro",
+        "l": false
+    },
+    {
+        "id": "5b40973b.4e5fe8",
+        "type": "image",
+        "z": "d2858166.8f7df",
+        "name": "preview",
+        "width": "320",
+        "data": "payload",
+        "dataType": "msg",
+        "thumbnail": false,
+        "active": true,
+        "pass": true,
+        "outputs": 1,
+        "x": 180,
+        "y": 1840,
+        "wires": [
+            [
+                "d3f9a39d.a4b16"
+            ]
+        ]
+    },
+    {
+        "id": "e03f336b.24be3",
+        "type": "image",
+        "z": "d2858166.8f7df",
+        "name": "preview",
+        "width": "320",
+        "data": "annotatedInput",
+        "dataType": "msg",
+        "thumbnail": false,
+        "active": true,
+        "pass": true,
+        "outputs": 1,
+        "x": 520,
+        "y": 1840,
+        "wires": [
+            [
+                "c8e9d45f.ee8cf8",
+                "d3620723.d4c2f8"
+            ]
+        ]
+    },
+    {
+        "id": "d78304da.227708",
+        "type": "link out",
+        "z": "d2858166.8f7df",
+        "name": "loop",
+        "links": [
+            "a908993d.c06228"
+        ],
+        "x": 215,
+        "y": 2440,
+        "wires": []
+    },
+    {
+        "id": "a908993d.c06228",
+        "type": "link in",
+        "z": "d2858166.8f7df",
+        "name": "loop",
+        "links": [
+            "d78304da.227708"
+        ],
+        "x": 55,
+        "y": 100,
+        "wires": [
+            [
+                "7944fb4b.6ba664"
+            ]
+        ]
+    },
+    {
+        "id": "fd401b07.9a32f8",
+        "type": "cocossd",
+        "z": "d2858166.8f7df",
+        "name": "",
+        "x": 360,
+        "y": 2140,
+        "wires": [
+            [
+                "2d7e909f.e2e8f"
+            ]
+        ]
+    },
+    {
+        "id": "bff62fd7.bd19b",
+        "type": "debug",
+        "z": "d2858166.8f7df",
+        "name": "result",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 690,
+        "y": 2140,
+        "wires": []
+    },
+    {
+        "id": "d3620723.d4c2f8",
+        "type": "http request",
+        "z": "d2858166.8f7df",
+        "name": "camera",
+        "method": "GET",
+        "ret": "bin",
+        "paytoqs": false,
+        "url": "http://kaigan2.suncomm.net/SnapshotJPEG?Resolution=320x240",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 75,
+        "y": 2140,
+        "wires": [
+            [
+                "e3aaf89d.de5fc8"
+            ]
+        ],
+        "icon": "font-awesome/fa-camera-retro",
+        "l": false
+    },
+    {
+        "id": "e3aaf89d.de5fc8",
+        "type": "image",
+        "z": "d2858166.8f7df",
+        "name": "preview",
+        "width": "320",
+        "data": "payload",
+        "dataType": "msg",
+        "thumbnail": false,
+        "active": true,
+        "pass": true,
+        "outputs": 1,
+        "x": 180,
+        "y": 2140,
+        "wires": [
+            [
+                "fd401b07.9a32f8"
+            ]
+        ]
+    },
+    {
+        "id": "2d7e909f.e2e8f",
+        "type": "image",
+        "z": "d2858166.8f7df",
+        "name": "preview",
+        "width": "320",
+        "data": "annotatedInput",
+        "dataType": "msg",
+        "thumbnail": false,
+        "active": true,
+        "pass": true,
+        "outputs": 1,
+        "x": 520,
+        "y": 2140,
+        "wires": [
+            [
+                "bff62fd7.bd19b",
+                "d78304da.227708"
+            ]
+        ]
+    },
+    {
+        "id": "57da7332.c51e2c",
+        "type": "status",
+        "z": "d2858166.8f7df",
+        "name": "cocossd node status",
+        "scope": [
+            "d56ba2ff.19168"
+        ],
+        "x": 75,
+        "y": 2440,
+        "wires": [
+            [
+                "a5baa5be.973bf8"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "a5baa5be.973bf8",
+        "type": "switch",
+        "z": "d2858166.8f7df",
+        "name": "ready to start?",
+        "property": "status.text",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "model loaded",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 135,
+        "y": 2440,
+        "wires": [
+            [
+                "d78304da.227708"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "42bdd962.783008",
+        "type": "catch",
+        "z": "d2858166.8f7df",
+        "name": "",
+        "scope": null,
+        "uncaught": false,
+        "x": 75,
+        "y": 2480,
+        "wires": [
+            [
+                "a6ca829c.df205"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "a6ca829c.df205",
+        "type": "delay",
+        "z": "d2858166.8f7df",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "x": 135,
+        "y": 2480,
+        "wires": [
+            [
+                "d78304da.227708"
+            ]
+        ],
+        "l": false
+    }
+]
