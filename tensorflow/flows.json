@@ -95,13 +95,13 @@
         "type": "inject",
         "z": "8fe719d8.c92058",
         "name": "",
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
         "repeat": "",
         "crontab": "",
         "once": true,
         "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
         "x": 140,
         "y": 60,
         "wires": [
@@ -115,7 +115,9 @@
         "type": "link in",
         "z": "8fe719d8.c92058",
         "name": "",
-        "links": [],
+        "links": [
+            "39478faf.0d5a6"
+        ],
         "x": 35,
         "y": 160,
         "wires": [
@@ -129,7 +131,9 @@
         "type": "link out",
         "z": "8fe719d8.c92058",
         "name": "",
-        "links": [],
+        "links": [
+            "647d8cdc.ed6304"
+        ],
         "x": 475,
         "y": 160,
         "wires": []
