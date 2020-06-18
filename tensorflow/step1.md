@@ -9,5 +9,5 @@ This is a demonstration flow using TensorFlow and Node-RED.
 (4) Finally, the flow outputs the annotated images to the preview node and result to the debug node.
 
 __Notes__
-
-Because it is a temporary environment on Katacoda, the Node-RED instance will be removed automatically after about 30 minutes.
+- You can change the URL which points image data on the http request node (get image).
+- Because it is a temporary environment on Katacoda, the Node-RED instance will be removed automatically after about 30 minutes.
