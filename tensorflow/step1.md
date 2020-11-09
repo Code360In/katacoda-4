@@ -10,4 +10,4 @@ This is a demonstration flow using TensorFlow and Node-RED.
 
 __Notes__
 - You can change the URL which points image data on the http request node (get image).
-- Because it is a temporary environment on Katacoda, the Node-RED instance will be removed automatically after about 30 minutes.
+- Because it is a temporary environment on Katacoda, the Node-RED instance will be removed automatically after about 50 minutes.
