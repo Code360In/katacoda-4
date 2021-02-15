@@ -13,6 +13,6 @@
         }
     },
     "scripts": {
-        "start": "node --max-old-space-size=256 ./node_modules/node-red/red.js --userDir . --settings ./settings.js flow.json"
+        "start": "node --max-old-space-size=256 ./node_modules/node-red/red.js --userDir . flow.json"
     }
 }
