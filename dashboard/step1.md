@@ -1,13 +1,7 @@
-This is a demonstration flow using TensorFlow and Node-RED.
+This is a playground environment for the Node-RED flow editor.
 
-(1) After the message, "Connecting to Port 1880" is displayed for about three minutes, your browser will automatically load Node-RED flow editor.
+After the message, "Connecting to Port 1880" is displayed for about 40 seconds, your browser will automatically load Node-RED flow editor.
+On the playground, you can install nodes, develop your flow, and deploy the flow.
+Because it is a temporary environment on Katacoda, the Node-RED instance will be removed automatically after about 50 minutes.
 
-(2) The sample flow gets image data using the http request node.
-
-(3) And then, the flow shows source image in preview node and recognizes images using TensorFlow.js.
-
-(4) Finally, the flow outputs the annotated images to the preview node and result to the debug node.
-
-__Notes__
-- You can change the URL which points image data on the http request node (get image).
-- Because it is a temporary environment on Katacoda, the Node-RED instance will be removed automatically after about 50 minutes.
+Endpoint URL: ws://[[HOST_SUBDOMAIN]]-1880-[[KATACODA_HOST]].environments.katacoda.com/data
