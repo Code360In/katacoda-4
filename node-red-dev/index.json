@@ -7,7 +7,7 @@
     }]
   },
   "environment": {
-    "_uilayout": "iframe",
+    "uilayout": "iframe",
     "uilayout": "terminal",
     "hidefinish": true,
     "showdashboard": true,
