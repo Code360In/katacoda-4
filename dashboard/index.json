@@ -11,10 +11,10 @@
     "uilayout": "terminal",
     "hidefinish": true,
     "showdashboard": true,
-    "dashboards": [{"name": "Flow editor", "port": 80}]
+    "dashboards": [{"name": "Flow editor", "port": 1880}]
   },
   "backend": {
     "imageid": "ubuntu",
-    "port": 80
+    "port": 1880
   }
 }
