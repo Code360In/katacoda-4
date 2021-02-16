@@ -13,7 +13,7 @@
         }
     },
     "scripts": {
-        "start": "node --max-old-space-size=256 ./node_modules/node-red/red.js --userDir . -D httpAdminRoot='/red' -D ui.path='/' --port 80 flow.json",
-        "_start": "node --max-old-space-size=256 ./node_modules/node-red/red.js --userDir . -D httpAdminRoot=false -D ui.path='/' --port 80 flow.json"
+        "start": "node --max-old-space-size=256 ./node_modules/node-red/red.js --userDir . -D httpAdminRoot='/red' -D ui.path='/' --port 1880 flow.json",
+        "_start": "node --max-old-space-size=256 ./node_modules/node-red/red.js --userDir . -D httpAdminRoot=false -D ui.path='/' --port 1880 flow.json"
     }
 }
