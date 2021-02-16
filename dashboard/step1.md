@@ -4,4 +4,4 @@ After the message, "Connecting to Port 1880" is displayed for about 40 seconds, 
 On the playground, you can install nodes, develop your flow, and deploy the flow.
 Because it is a temporary environment on Katacoda, the Node-RED instance will be removed automatically after about 50 minutes.
 
-Flow editor: https://[[HOST_SUBDOMAIN]]-1880-[[KATACODA_HOST]].environments.katacoda.com/red
+Flow editor: https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/red
