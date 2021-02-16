@@ -4,4 +4,3 @@ git checkout dev
 npm install
 npm run build
 npm start
-
