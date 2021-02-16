@@ -7,8 +7,7 @@
     }]
   },
   "environment": {
-    "_uilayout": "iframe",
-    "uilayout": "terminal",
+    "uilayout": "iframe",
     "hidefinish": true,
     "showdashboard": true,
     "dashboards": [{"name": "Flow editor", "port": 1880}]
