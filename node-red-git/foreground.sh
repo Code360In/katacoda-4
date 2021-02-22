@@ -1,2 +1,2 @@
-npm install node-red
-node node_modules/node-red/red.js -D editorTheme.projects.enabled=true
+npm install -g node-red
+node-red -D editorTheme.projects.enabled=true
