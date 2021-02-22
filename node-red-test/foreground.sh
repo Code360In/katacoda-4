@@ -1,2 +1,3 @@
-npm install node-red
-node node_modules/node-red/red.js
+npm install -g node-red
+npm install -g node-red-contrib-plugin-notify
+node-red
