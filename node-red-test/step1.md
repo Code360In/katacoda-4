@@ -5,3 +5,5 @@ On the playground, you can install nodes, develop your flow, and deploy the flow
 Because it is a temporary environment on Katacoda, the Node-RED instance will be removed automatically after about 50 minutes.
 
 Open new tab: https://[[HOST_SUBDOMAIN]]-1880-[[KATACODA_HOST]].environments.katacoda.com
+
+test
