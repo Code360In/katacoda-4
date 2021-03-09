@@ -1,0 +1,21 @@
+name: CI
+on:
+  push:
+    branches: [ main ]
+  schedule:
+    - cron:  '0 3 * * 3'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Create and push node-red.zip
+        run: |
+          rm node-red.zip
+          npm install node-red
+          zip -r node-red.zip node_modules
+          git config --global user.email "kazuhito.yokoi.nx@hitachi.com"
+          git config --global user.name "Kazuhito Yokoi"
+          git add node-red.zip
+          git commit -m "Add zip file which includes the latest Node-RED"
+          git push
