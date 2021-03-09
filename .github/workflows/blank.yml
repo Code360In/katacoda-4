@@ -12,7 +12,7 @@ jobs:
       - name: Create and push node-red.zip
         run: |
           rm -f node-red.zip
-          npm install node-red
+          npm install node-red@next node-red-contrib-plugin-notify
           zip -r node-red.zip node_modules
           git config --global user.email "kazuhito.yokoi.nx@hitachi.com"
           git config --global user.name "Kazuhito Yokoi"
