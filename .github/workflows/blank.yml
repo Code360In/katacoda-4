@@ -11,7 +11,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Create and push node-red.zip
         run: |
-          rm node-red.zip
+          rm -f node-red.zip
           npm install node-red
           zip -r node-red.zip node_modules
           git config --global user.email "kazuhito.yokoi.nx@hitachi.com"
