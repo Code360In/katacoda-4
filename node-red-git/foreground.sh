@@ -1,2 +1,2 @@
-npm install -g node-red@next node-red-node-swagger nrlint node-red-debugger
+npm install -g node-red@next nrlint node-red-debugger node-red-node-swagger node-red node-red-contrib-plugin-notify
 node-red -D editorTheme.projects.enabled=true -D functionExternalModules=true
